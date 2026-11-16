@@ -1,0 +1,17 @@
+pub mod admin;
+pub mod catalog;
+pub mod config;
+pub mod gemini;
+pub mod google;
+pub mod guard;
+pub mod heartbeat;
+pub mod opencode;
+pub mod patch;
+pub mod replay;
+pub mod routing;
+pub mod secrets;
+pub mod server;
+pub mod tools;
+pub mod translate;
+pub mod ui;
+pub mod upstream;

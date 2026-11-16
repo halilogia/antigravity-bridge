@@ -1,0 +1,6 @@
+/target
+secrets.json
+bridge.json
+config.json
+*.tmp
+.antigravity-rust-bridge*/
