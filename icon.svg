@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e14" />
+      <stop offset="50%" stop-color="#11151f" />
+      <stop offset="100%" stop-color="#161b28" />
+    </linearGradient>
+
+    <!-- Rust Orange Gradient -->
+    <linearGradient id="rustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7a3d" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+
+    <!-- Silver Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Cyan Glow Accent -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Ambient Radial Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="56%" r="45%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0b0d13" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Squircle -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="2" />
+
+  <!-- Ambient Glow -->
+  <circle cx="256" cy="275" r="180" fill="url(#centerGlow)" />
+
+  <!-- Bridge Legs (The Ascending Gateway / Letter A) -->
+  <g filter="url(#glowFilter)">
+    <!-- Left Leg (Rust Orange Energy) -->
+    <polygon points="256,128 238,144 132,384 158,384 256,160" fill="url(#rustGrad)" />
+
+    <!-- Right Leg (Sleek Steel Structure) -->
+    <polygon points="256,128 274,144 380,384 354,384 256,160" fill="url(#steelGrad)" />
+
+    <!-- Floating Quantum Crossbeam (The Bridge) -->
+    <rect x="156" y="258" width="200" height="18" rx="9" fill="#ffffff" />
+
+    <!-- Quantum Nexus Node (Center of Bridge) -->
+    <circle cx="256" cy="267" r="28" fill="#ffffff" />
+    <circle cx="256" cy="267" r="18" fill="url(#rustGrad)" />
+    <circle cx="256" cy="267" r="7" fill="#ffffff" />
+
+    <!-- Floating Antigravity Top Diamond -->
+    <polygon points="256,92 270,106 256,120 242,106" fill="url(#cyanGrad)" />
+  </g>
+
+  <!-- Inner Subtle Rim Highlight -->
+  <rect x="18" y="18" width="476" height="476" rx="106" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+</svg>

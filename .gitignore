@@ -4,3 +4,5 @@ bridge.json
 config.json
 *.tmp
 .antigravity-rust-bridge*/
+_ref/
+
